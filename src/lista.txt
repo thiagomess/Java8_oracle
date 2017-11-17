@@ -1,0 +1,40 @@
+Hernane,Atacante,29,Sport,3
+Lucas Pratto, Atacante,27,Atletico-MG,13
+Nene,Atacante,33,Vasco,8
+Ricardo Oliveira,Atacante,34,Santos,20
+Bruno,Lateral-Direito,23,São Paulo,1
+Egidio,Lateral-Esquerdo,27,Palmeiras,3
+Renan,Goleiro,33,Goias,0
+Ernando,Zagueiro,31,Internacional,3
+Lugano,Zagueiro,35,São Paulo,1
+Paolo Guerrero,Atacante,34,Flamengo,8
+Cicero,Meio-Campo,28,Fluminense,4
+Elias,Volante,27,Corinthians,7
+Arrascaeta,Meio-Campo,30,Cruzeiro,2
+Dedé,Zagueiro,28,Cruzeiro,0
+Carlinhos,Lateral-Esquerdo,31,São Paulo,2
+Edu Dracena,Zagueiro,33,Palmeiras,4
+Willians,Volante,32,Cruzeiro,2
+Marcos Rocha,Lateral-Direito,26,Atletico-MG,6
+Victor,Goleiro,29,Atletico-MG,0
+Rogerio Ceni,Goleiro,41,São Paulo,7
+Marcelo Grohe,Goleiro,29,Grêmio,0
+Negueba,Atacante,27,Coritiba,4
+Bressan,Zagueiro,22,Grêmio,2
+Rever,Zagueiro,29,Internacional,5
+Michel Bastos,Meio-Campo,33,São Paulo,7
+Vitinho,Atacante,22,Internacional,11
+Apodi,Lateral-Direito,27,Chapecoense,5
+Arouca,Volante,29,Palmeiras,1
+Cristaldo,Atacante,31,Palmeiras,5
+Vagner Love,Atacante,37,Corinthians,14
+Lucas Lima,Meio-Campo,25,Santos,7
+Rodrigo Caio,Volante,22,São Paulo,2
+Jefferson,Goleiro,34,Botafogo,0
+Marcos Guilherme,Meio-Campo,22,Atletico-PR,4
+Henrique Almeida,Atacante,27,Coritiba,12
+Thiago Mendes,Volante,28,São Paulo,4
+Centurion,Atacante,27,São Paulo,2
+Fernando Prass,Goleiro,35, Palmeiras,0
+Zé Roberto,Meio-Campo,38,Palmeiras,2
+Malcom,Atacante,18,Corinthians,7
