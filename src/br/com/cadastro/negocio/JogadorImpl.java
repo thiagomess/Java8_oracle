@@ -17,11 +17,11 @@ import br.com.cadastro.model.Jogador;
 
 public class JogadorImpl {
 
-	public boolean verifcarArquivoExiste(Path caminho) {
+	public boolean verificarArquivoExiste(Path caminho) {
 		boolean ret = false;
 		try {
 			Stream<Path> stream = Files.list(caminho);
-			Optional<Path> arq = stream.filter(p -> p.toString().endsWith("jogadores.txt")).findAny();	
+			Optional<Path> arq = stream.filter(p -> p.toString().endsWith("lista.txt")).findAny();	
 			ret = arq.isPresent(); //informa se o arquivo esta presente
 		} catch (IOException ex) {
 			ex.printStackTrace();
