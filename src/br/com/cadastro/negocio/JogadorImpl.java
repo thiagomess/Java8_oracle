@@ -5,8 +5,10 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -59,9 +61,39 @@ public class JogadorImpl {
 	}
 	public void imprimirJogadoresTimeGols(List<Jogador>jogadores, String time) {
 		jogadores.stream().filter(jogador -> jogador.getTimeAtual().equals(time)&&
-				jogador.getGolsMarcados()> 10);
+				jogador.getGolsMarcados()> 10).forEach(System.out::println);
 	}
-
-
-
+	public void agruparJogadoresPortime (List<Jogador> jogadores) {
+		jogadores.stream().sorted(Comparator.comparing(Jogador::getTimeAtual)).forEach(System.out::println);
+	}
+	public double calcularMediaIdade (List<Jogador>jogadores) {
+		return jogadores.stream().mapToInt(Jogador::getIdade).average().getAsDouble();
+	}
+	public void imprimirJogadoresMaisVelhos(List<Jogador> jogadores) {
+		Jogador jogador = jogadores.stream().max(Comparator.comparingInt(Jogador::getIdade)).get();
+		System.out.println("Jogador mais velho: " + jogador.getNome());
+	}
+	public void imprimirJogadorMaisNovo(List <Jogador> jogadores) {
+		Jogador jogador = jogadores.stream().min(Comparator.comparingInt(Jogador::getIdade)).get();
+		//.min(p1,p2)-> Integer.compare(p1.getAge(), p2.getAge()))
+		System.out.println("Jogador mais novo: " + jogador.getNome());
+	}
+	public void imprimirJogadorArtilheiro(List<Jogador> jogadores) {
+		Jogador jogador =jogadores.stream().max(Comparator.comparingInt(Jogador::getGolsMarcados)).get();
+		System.out.println("Jogador Artilheiro: " + jogador.getNome());
+	}
+	public int imprimirSomatorioGols(List<Jogador>jogadores) {
+		int soma = jogadores.stream().mapToInt(jogador -> jogador.getGolsMarcados()).sum();
+		return soma;
+	}
+	public void agruparJogadoresPeloTime(List<Jogador>jogadores) {
+		Map<String, List<Jogador>> groupByTime = jogadores.stream().collect(
+				Collectors.groupingBy(Jogador::getTimeAtual));
+		System.out.println(groupByTime);
+	}
+	public void ordenarJogadoresGols(List<Jogador>jogadores) {
+		jogadores.stream().sorted(Comparator.comparingInt(Jogador::getGolsMarcados).
+				reversed()).forEach(System.out::println);
+	}
+	
 }
